@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyen Huu Khang — Data Analyst</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">HuuKhang</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publication">Publication</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Nguyen Huu Khang</h1>
+      <h2 class="hero-title">Data Analyst <span class="hero-divider">/</span> ML Engineer</h2>
+      <p class="hero-bio">
+        Turning complex datasets into clear, actionable insights. Published researcher at
+        <strong>RIVF 2025</strong>. Hands-on with Python, SQL, and modern analytics platforms.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="NguyenHuuKhang_Resume.pdf" target="_blank" class="btn btn-outline">Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/huukhang2423" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="mailto:nguyenkhang242333@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">analyst.py</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">from</span> data <span class="kw">import</span> insights
+
+<span class="kw">class</span> <span class="cls">Khang</span>:
+    role = <span class="str">"Data Analyst"</span>
+    location = <span class="str">"Ho Chi Minh City"</span>
+    education = <span class="str">"Data Science @ IU-VNU"</span>
+
+    skills = [
+        <span class="str">"Python"</span>, <span class="str">"SQL"</span>, <span class="str">"PySpark"</span>,
+        <span class="str">"Scikit-learn"</span>, <span class="str">"XGBoost"</span>,
+        <span class="str">"React"</span>, <span class="str">"PostgreSQL"</span>
+    ]
+
+    <span class="kw">def</span> <span class="fn">work</span>(self):
+        <span class="kw">return</span> insights.make_actionable()</code></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Data Science student at <strong>International University – VNU HCMC</strong> (graduating May 2026),
+            with a strong foundation in machine learning, data engineering, and full-stack development.
+          </p>
+          <p>
+            During my 6-month internship at <strong>Masan MeatLife</strong>, I worked on competitor
+            analysis, sales/supply chain data pipelines, and built dashboards for strategic decision-making.
+          </p>
+          <p>
+            My research on a <strong>Location Recommendation System</strong> was accepted and published at
+            <strong>RIVF 2025</strong> — one of the premier computing conferences in Southeast Asia.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1</span>
+              <span class="stat-label">Publication</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">6mo</span>
+              <span class="stat-label">Industry Exp.</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <div class="info-item">
+              <span class="info-label">Education</span>
+              <span class="info-value">Data Science, IU-VNU HCMC</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Graduation</span>
+              <span class="info-value">May 2026</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Ho Chi Minh City, Vietnam</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Available</span>
+              <span class="info-value available">Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            Languages
+          </h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+            Data & ML Libraries
+          </h3>
+          <div class="tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">PySpark</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">SciPy</span>
+            <span class="tag">GeoPandas</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">SHAP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm-2 5h-2v-2h2v2zM4 3h16c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm16 4h-2V5h2v2z"/></svg>
+            Databases
+          </h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Machine Learning
+          </h3>
+          <div class="tags">
+            <span class="tag">Supervised Learning</span>
+            <span class="tag">Classification</span>
+            <span class="tag">Regression</span>
+            <span class="tag">Clustering</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Cross-validation</span>
+            <span class="tag">Hyperparameter Tuning</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+            Tools & Platforms
+          </h3>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">Jupyter</span>
+            <span class="tag">Prisma ORM</span>
+            <span class="tag">REST API</span>
+            <span class="tag">ETL Pipeline</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Plotly Dash</span>
+            <span class="tag">Streamlit</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Web Development
+          </h3>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Vercel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work <span>Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Analyst Intern</h3>
+                <p class="timeline-company">Masan MeatLife (The CrownX)</p>
+              </div>
+              <span class="timeline-date">Jun 2024 – Dec 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Competitor analysis using geospatial distance metrics between stores to support strategic pricing policies; built a map visualization dashboard.</li>
+              <li>Collected and integrated data from SAP sales reports, production logs, and supply chain metrics; performed data cleaning to ensure integrity for downstream analysis.</li>
+              <li>Conducted statistical analyses with Excel and Python to identify trends and actionable insights, informing strategic business decisions and process optimization.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">Excel</span>
+              <span class="tag tag-sm">SAP</span>
+              <span class="tag tag-sm">Power BI</span>
+              <span class="tag tag-sm">GIS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="project-badge">RIVF 2025 Published</div>
+            </div>
+            <h3 class="project-title">Location Recommendation System for Coffee Shops</h3>
+            <p class="project-desc">
+              5-stage ML pipeline identifying optimal coffee shop locations across Ho Chi Minh City.
+              K-means clustering (k=5) + XGBoost regression (R²=0.9906). Scraped 560 chain locations,
+              5,905 independent cafes, and 25,000+ POIs via TomTom API. Applied AHP weighting,
+              dual annealing optimization, and SHAP explainability.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">XGBoost</span>
+              <span class="tag tag-sm">K-Means</span>
+              <span class="tag tag-sm">SHAP</span>
+              <span class="tag tag-sm">Plotly Dash</span>
+              <span class="tag tag-sm">TomTom API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/huukhang2423/Location-Recommendation-System-for-Opening-a-New-Coffee-Shop" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="https://doi.org/10.1109/RIVF68649.2025.11365191" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                Paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm1 14.93V15a1 1 0 00-2 0v1.93A8.001 8.001 0 014.07 11H6a1 1 0 000-2H4.07A8.001 8.001 0 0111 4.07V6a1 1 0 002 0V4.07A8.001 8.001 0 0119.93 11H18a1 1 0 000 2h1.93A8.001 8.001 0 0113 16.93z"/></svg>
+              </div>
+            </div>
+            <h3 class="project-title">FinTrack — Personal Finance Web App</h3>
+            <p class="project-desc">
+              Full-stack finance tracker with React 18, TypeScript, Node.js, Express, PostgreSQL, and Prisma ORM.
+              JWT auth with email verification, full CRUD for transactions/budgets/savings goals, 6-month trend charts.
+              30+ REST API endpoints. Deployed to Vercel + Render.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">React</span>
+              <span class="tag tag-sm">TypeScript</span>
+              <span class="tag tag-sm">Node.js</span>
+              <span class="tag tag-sm">PostgreSQL</span>
+              <span class="tag tag-sm">Prisma</span>
+              <span class="tag tag-sm">JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/huukhang2423/Fintrack" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+              </div>
+            </div>
+            <h3 class="project-title">Retail Analysis</h3>
+            <p class="project-desc">
+              PySpark-powered analysis of 500K+ retail transactions. RFM segmentation by recency, frequency, and monetary value.
+              Apriori algorithm for market basket analysis surfacing top bundling opportunities. Interactive Streamlit + Plotly dashboard.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">PySpark</span>
+              <span class="tag tag-sm">RFM Analysis</span>
+              <span class="tag tag-sm">Apriori</span>
+              <span class="tag tag-sm">Streamlit</span>
+              <span class="tag tag-sm">Plotly</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/huukhang2423/Retail-Analysis" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+              </div>
+            </div>
+            <h3 class="project-title">Obesity Level Prediction</h3>
+            <p class="project-desc">
+              Multi-class classification predicting obesity risk across 7 categories from 20,757 individuals.
+              Compared 6 algorithms with 10-fold cross-validation. Engineered BMI, Lifestyle Score, Activity Balance features.
+              Achieved 90.56% accuracy with Random Forest.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">Scikit-learn</span>
+              <span class="tag tag-sm">Random Forest</span>
+              <span class="tag tag-sm">XGBoost</span>
+              <span class="tag tag-sm">Feature Engineering</span>
+              <span class="tag tag-sm">Cross-validation</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/huukhang2423/Obesity-Level-Prediction" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+              </div>
+            </div>
+            <h3 class="project-title">Clinic Management System</h3>
+            <p class="project-desc">
+              Full-stack web app for managing patient records with React 19, Node.js, Express 5, and MongoDB.
+              RESTful APIs for patient profiles, visit history, and prescriptions. Vietnamese name autocomplete
+              from 400+ names dataset. Tailwind CSS responsive UI.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">React 19</span>
+              <span class="tag tag-sm">Node.js</span>
+              <span class="tag tag-sm">MongoDB</span>
+              <span class="tag tag-sm">Express</span>
+              <span class="tag tag-sm">Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/huukhang2423/Clinic-Management-System" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+              </div>
+            </div>
+            <h3 class="project-title">Brain Tumor Classification from MRI</h3>
+            <p class="project-desc">
+              MRI-based tumor classification using SVM with handcrafted features: histogram intensity, Laplacian texture,
+              Canny edge density (20 features/image). Trained on 7,023 scans across 4 categories.
+              83.83% accuracy, 97% F1 on healthy scans. Lightweight 546KB model — no GPU required.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">SVM</span>
+              <span class="tag tag-sm">Feature Engineering</span>
+              <span class="tag tag-sm">OpenCV</span>
+              <span class="tag tag-sm">Scikit-learn</span>
+              <span class="tag tag-sm">Medical Imaging</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/huukhang2423/Brain-Tumor-Classification-from-MRI-Images" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+              </div>
+            </div>
+            <h3 class="project-title">WASDE Data Automation System</h3>
+            <p class="project-desc">
+              Python tkinter desktop app automating USDA WASDE agricultural report processing for 5 commodities.
+              ETL pipeline consolidating multi-year CSV data (2021–2025), computing stocks-to-use ratios.
+              Auto-refreshes Power BI dashboards with threaded non-blocking UI.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">tkinter</span>
+              <span class="tag tag-sm">ETL</span>
+              <span class="tag tag-sm">Power BI</span>
+              <span class="tag tag-sm">Threading</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/huukhang2423/WASDE-Data-Automation-System" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATION -->
+  <section id="publication" class="section">
+    <div class="container">
+      <h2 class="section-title">Publication</h2>
+      <div class="pub-card reveal">
+        <div class="pub-badge">RIVF 2025</div>
+        <h3 class="pub-title">Location Recommendation System for Opening a New Coffee Shop</h3>
+        <p class="pub-venue">The 19th International Conference on Computing and Communication Technologies (RIVF 2025)</p>
+        <p class="pub-doi">
+          <span>DOI:</span>
+          <a href="https://doi.org/10.1109/RIVF68649.2025.11365191" target="_blank">10.1109/RIVF68649.2025.11365191</a>
+        </p>
+        <p class="pub-desc">
+          Presented a data-driven 5-stage ML framework using K-means clustering and XGBoost regression to recommend
+          optimal coffee shop locations in Ho Chi Minh City. Integrated 25,000+ real-world POIs and built an interactive
+          geospatial dashboard for real-time location scoring.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="contact-subtitle">I'm currently open to new opportunities. Feel free to reach out!</p>
+      <div class="contact-grid">
+        <a href="mailto:nguyenkhang242333@gmail.com" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">nguyenkhang242333@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://github.com/huukhang2423" target="_blank" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/huukhang2423</p>
+          </div>
+        </a>
+        <div class="contact-card reveal no-link">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Location</p>
+            <p class="contact-value">Ho Chi Minh City, Vietnam</p>
+          </div>
+        </div>
+        <a href="tel:+84789898204" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">+84 789 898 204</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; built by <strong>Nguyen Huu Khang</strong> &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
